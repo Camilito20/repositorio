@@ -9,7 +9,7 @@ def main():
         return exersice1()
 
     elif respuesta == '2':
-        return exersice2()
+        print('вторая функция')
 
     elif respuesta == '3':
         print('Выход....')
@@ -29,21 +29,6 @@ def exersice1():
     suma = 0
     for n in range(1, N + 1):
         ecuacion = ((-1)**(n + 1) * (x ** n) / (n))
-        suma += ecuacion
-
-    print(f'Решении ln(x + 1) = {suma}')
-
-
-def exersice2():
-    x = float(input('''\nнаптшите ценность x в ln(x - 1)
-число должен (-1 < x <= 1): '''))
-    N = 100
-    if (-1 < x <= 1) == False:
-        raise ValueError("число должен -1 < x <= 1)")
-
-    suma = 0
-    for n in range(1, N + 1):
-        ecuacion = ((x ** n) / (n))
         suma += ecuacion
 
     print(f'Решении ln(x + 1) = {suma}')
